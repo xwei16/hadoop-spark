@@ -1,0 +1,84 @@
+time="2025-10-05T20:21:04-05:00" level=warning msg="/home/xwei16/hadoop-spark/cs511p1-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Safe mode is ON
+Configured Capacity: 280390459392 (261.13 GB)
+Present Capacity: 217099268096 (202.19 GB)
+DFS Remaining: 216090943488 (201.25 GB)
+DFS Used: 1008324608 (961.61 MB)
+DFS Used%: 0.46%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (3):
+
+Name: 172.18.0.2:9866 (hadoop-spark-worker1-1.hadoop-spark_default)
+Hostname: worker1
+Decommission Status : Normal
+Configured Capacity: 93463486464 (87.04 GB)
+DFS Used: 403316736 (384.63 MB)
+Non DFS Used: 16235139072 (15.12 GB)
+DFS Remaining: 72030314496 (67.08 GB)
+DFS Used%: 0.43%
+DFS Remaining%: 77.07%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Mon Oct 06 01:21:04 UTC 2025
+Last Block Report: Mon Oct 06 01:20:43 UTC 2025
+Num of Blocks: 12
+
+
+Name: 172.18.0.3:9866 (main)
+Hostname: main
+Decommission Status : Normal
+Configured Capacity: 93463486464 (87.04 GB)
+DFS Used: 403312640 (384.63 MB)
+Non DFS Used: 16235143168 (15.12 GB)
+DFS Remaining: 72030314496 (67.08 GB)
+DFS Used%: 0.43%
+DFS Remaining%: 77.07%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Mon Oct 06 01:21:05 UTC 2025
+Last Block Report: Mon Oct 06 01:20:41 UTC 2025
+Num of Blocks: 18
+
+
+Name: 172.18.0.4:9866 (hadoop-spark-worker2-1.hadoop-spark_default)
+Hostname: worker2
+Decommission Status : Normal
+Configured Capacity: 93463486464 (87.04 GB)
+DFS Used: 201695232 (192.35 MB)
+Non DFS Used: 16436760576 (15.31 GB)
+DFS Remaining: 72030314496 (67.08 GB)
+DFS Used%: 0.22%
+DFS Remaining%: 77.07%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Mon Oct 06 01:21:04 UTC 2025
+Last Block Report: Mon Oct 06 01:20:43 UTC 2025
+Num of Blocks: 12
+
+

@@ -1,0 +1,36 @@
+time="2025-10-05T20:22:39-05:00" level=warning msg="/home/xwei16/hadoop-spark/cs511p1-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ hadoop-spark-main-1 copy resources/pi.scala to hadoop-spark-main-1:/pi.scala Copying
+ hadoop-spark-main-1 copy resources/pi.scala to hadoop-spark-main-1:/pi.scala Copied
+time="2025-10-05T20:22:39-05:00" level=warning msg="/home/xwei16/hadoop-spark/cs511p1-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
++ spark-shell --master spark://main:7077
++ cat /pi.scala
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/10/06 01:22:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Spark context Web UI available at http://main:4040
+Spark context available as 'sc' (master = spark://main:7077, app id = app-20251006012250-0001).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.4.1
+      /_/
+         
+Using Scala version 2.12.17 (OpenJDK 64-Bit Server VM, Java 1.8.0_342)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> // https://spark.apache.org/examples.html
+
+scala> val count = sc.parallelize(1 to 10000000).filter { _ =>
+     |   val x = math.random
+     |   val y = math.random
+     |   x*x + y*y < 1
+     | }.count()
+[Stage 0:>                                                          (0 + 4) / 4][Stage 0:==============>                                            (1 + 3) / 4][Stage 0:=============================>                             (2 + 2) / 4][Stage 0:============================================>              (3 + 1) / 4]                                                                                count: Long = 7853343
+
+scala> println(s"Pi is roughly ${4.0 * count / 10000000}")
+Pi is roughly 3.1413372
+
+scala> :quit
