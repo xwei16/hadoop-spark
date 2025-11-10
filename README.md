@@ -1,4 +1,4 @@
-HDFS/Spark
+# HDFS/Spark
 
 To get started, spin up the cluster.
 ```bash
